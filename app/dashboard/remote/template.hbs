@@ -1,0 +1,9 @@
+Actions of {{id}}::
+
+{{#each model as |device|}}
+  {{device.name}} ({{device.type}})
+  Actions:
+  {{#each device.actions as |deviceAction|}}
+    {{deviceAction}}
+  {{/each}}
+{{/each}}

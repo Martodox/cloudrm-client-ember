@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('dashboard', { path: '/' }, function() {
+    this.route('remote', { path: '/remote/:remoteId' });
+  });
+  this.route('login');
+  this.route('not-found');
 });
 
 export default Router;
