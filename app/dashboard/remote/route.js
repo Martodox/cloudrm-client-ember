@@ -2,11 +2,8 @@ import Route from '@ember/routing/route';
 import { get, set } from '@ember/object';
 
 export default Route.extend({
-  async model({remoteId}) {
+  model({remoteId}) {
     this._super(...arguments);
-
-    const remote = await get(this, 'store').peekRecord('remote', remoteId);
-
-    return get(remote, 'actions');
+    return get(this, 'store').peekRecord('remote', remoteId).get('device');
   }
 });
