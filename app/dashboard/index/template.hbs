@@ -1,4 +1,16 @@
-All remotes:
-{{#each model as |remote|}}
-  {{#link-to "dashboard.remote" remote.id}}{{remote.id}}{{/link-to}}
-{{/each}}
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Connected remotes</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each model as |remote index|}}
+    <tr>
+      <th>{{index}}</th>
+      <td>{{#link-to "dashboard.remote" remote.id}}{{remote.id}}{{/link-to}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

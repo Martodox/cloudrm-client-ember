@@ -1,1 +1,5 @@
-{{outlet}}
+<form class="form" onsubmit={{action 'login'}}>
+  {{input name="username" class="input" type="text" placeholder="username" value=username}}
+  {{input name="password" class="input" type="password" placeholder="password" value=password}}
+  <button class="btn btn-primary" type="submit">Login</button>
+</form>

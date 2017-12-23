@@ -1,6 +1,16 @@
 import DS from 'ember-data';
+import { computed, get } from '@ember/object';
+import { inject } from '@ember/service';
 
 export default DS.RESTAdapter.extend({
-  host: 'https://api.cloudrm.pro',
-  namespace: 'api/v1'
+  login: inject(),
+  //host: 'https://api.cloudrm.pro',
+  host: 'http://localhost:3000',
+  namespace: 'api/v1',
+  headers: computed('login.token', function () {
+    return {
+      'token': get(this, 'login.token')
+    }
+  })
+
 });
