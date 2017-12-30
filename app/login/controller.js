@@ -10,7 +10,7 @@ export default Controller.extend({
     async login(e) {
       e.preventDefault();
 
-      get(this, 'store').unloadAll('session');
+      get(this, 'store').unloadAll();
 
       let session = await get(this, 'store').createRecord('session', {
         username: get(this, 'username'),
