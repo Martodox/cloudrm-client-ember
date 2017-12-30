@@ -12,7 +12,7 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
-    "prod": "ember build --prod",
+    "prod": "npm install && npm update && ember build --prod",
     "start": "ember serve",
     "test": "ember test"
   },
