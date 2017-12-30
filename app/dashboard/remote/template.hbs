@@ -1,9 +1,19 @@
-<h6>Actions of {{remoteId}}</h6>
+<div class="remotes-actions">
 
-{{#each model as |device|}}
-  {{device.name}} ({{device.type}})
-  Actions:
-  {{#each device.actions as |deviceAction|}}
-    {{deviceAction}}
-  {{/each}}
-{{/each}}
+  <h6>Actions of {{remoteId}}</h6>
+
+  <div class="devices">
+    {{#each model as |device|}}
+      <div class="device">
+        {{device.name}} ({{device.type}})
+        <div class="actions">
+          {{#each device.actions as |deviceAction|}}
+            <span {{action 'invoke' remoteId device.name deviceAction}}>{{deviceAction}}</span>
+          {{/each}}
+        </div>
+        {{state}}
+      </div>
+    {{/each}}
+  </div>
+
+</div>
