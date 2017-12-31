@@ -8,7 +8,7 @@
         {{device.name}} ({{device.type}})
         <div class="actions">
           {{#each device.actions as |deviceAction|}}
-            <span {{action 'invoke' remoteId device.name deviceAction}}>{{deviceAction}}</span>
+            <button class="btn btn-primary" {{action 'invoke' remoteId device.name deviceAction}}>{{deviceAction}}</button>
           {{/each}}
         </div>
         {{state}}
