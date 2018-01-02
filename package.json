@@ -20,7 +20,7 @@
   "devDependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "broccoli-asset-rev": "^2.4.5",
-    "ember-bootstrap": "^1.0.0-rc.5",
+    "ember-bootstrap": "^1.0.0",
     "ember-cli": "~2.17.1",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.6.0",
@@ -37,7 +37,9 @@
     "ember-cli-sri": "^2.1.0",
     "ember-data": "~2.17.0",
     "ember-export-application-global": "^2.0.0",
+    "ember-font-awesome": "^4.0.0-rc.2",
     "ember-load-initializers": "^1.0.0",
+    "ember-one-way-controls": "^3.0.1",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.17.0",
     "loader.js": "^4.2.3"

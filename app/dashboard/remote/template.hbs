@@ -4,15 +4,7 @@
 
   <div class="devices">
     {{#each model as |device|}}
-      <div class="device">
-        {{device.name}} ({{device.type}})
-        <div class="actions">
-          {{#each device.actions as |deviceAction|}}
-            <button class="btn btn-primary" {{action 'invoke' remoteId device.name deviceAction}}>{{deviceAction}}</button>
-          {{/each}}
-        </div>
-        {{state}}
-      </div>
+      {{remote-device remoteId=remoteId device=device}}
     {{/each}}
   </div>
 
