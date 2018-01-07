@@ -1,20 +1,14 @@
 <div class="dashboard-index">
-  <table class="table">
-    <thead>
-    <tr>
-      <th>#</th>
-      <th>Connected remotes</th>
-    </tr>
-    </thead>
-    <tbody>
+  <h5>Connected remotes :</h5>
+  <ul class="remote-list">
     {{#each model as |remote index|}}
-      <tr>
-        <th>{{index}}</th>
-        <td>{{#link-to "dashboard.remote" remote.id}}{{remote.id}}{{/link-to}}</td>
-      </tr>
+   <li class="remote">
+
+     {{#link-to "dashboard.remote" remote.id}}{{remote.id}}{{/link-to}}
+
+   </li>
     {{/each}}
-    </tbody>
-  </table>
+ </ul>
 </div>
 
 

@@ -1,5 +1,17 @@
-<form class="form" onsubmit={{action 'login'}}>
-  {{input name="username" class="input" type="text" placeholder="username" value=username}}
-  {{input name="password" class="input" type="password" placeholder="password" value=password}}
-  <button class="btn btn-primary" type="submit">Login</button>
-</form>
+<div class="login container">
+
+
+
+
+    <form class="form-signin" onsubmit={{action 'login'}}>
+      <h2 class="form-signin-heading">Please sign in</h2>
+      <label for="inputLogin" class="sr-only">Email address</label>
+      {{input name="username" id="inputLogin" class="form-control" type="text" placeholder="Username" value=username}}
+      <label for="inputPassword" class="sr-only">Password</label>
+      {{input name="password" id="inputPassword" class="form-control" type="password" placeholder="Password" value=password}}
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
+  </div>
+

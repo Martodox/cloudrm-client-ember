@@ -6,7 +6,7 @@
     </button>
 
     <div class="navbar-collapse {{if isMenuOpen ? "collapse " }}" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto" onclick={{action 'toggleNavBar'}}>
+      <ul class="navbar-nav mr-auto main-nav" onclick={{action 'toggleNavBar'}}>
         <li class="nav-item active">
           {{#link-to 'dashboard' class="nav-link"}}Home{{/link-to}}
         </li>
@@ -17,7 +17,7 @@
   </nav>
 </header>
 
-<section class="dashboard">
+<section class="dashboard offset-md-2">
 
   {{outlet}}
 </section>
