@@ -1,8 +1,23 @@
-<section class="dashboard">
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Cloudrm</a>
+    <button {{action "toggleNavBar"}} class="{{if isMenuOpen ? "collapsed " }}navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="navbar-collapse {{if isMenuOpen ? "collapse " }}" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto main-nav" onclick={{action 'toggleNavBar'}}>
+        <li class="nav-item active">
+          {{#link-to 'dashboard' class="nav-link"}}Home{{/link-to}}
+        </li>
+        <button class="btn btn-outline-success my-2 my-sm-0" onclick={{action 'logout'}}>logout</button>
 
-  <h5>Dashboard</h5>
-  <button onclick={{action 'logout'}}>logout</button>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section class="dashboard offset-md-2">
 
   {{outlet}}
 </section>

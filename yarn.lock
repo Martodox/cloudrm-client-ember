@@ -55,18 +55,7 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@ember-decorators/argument@^0.8.3":
-  version "0.8.4"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/argument/-/argument-0.8.4.tgz#ad10d422e9cd9b1bda98555f0b3b600dde546e04"
-  dependencies:
-    babel-plugin-filter-imports "^1.1.1"
-    broccoli-funnel "^2.0.1"
-    ember-cli-babel "^6.3.0"
-    ember-cli-version-checker "^2.0.0"
-    ember-compatibility-helpers "^0.1.1"
-    ember-get-config "^0.2.3"
-
-"@ember-decorators/argument@ember-decorators/argument":
+"@ember-decorators/argument@^0.8.3", "@ember-decorators/argument@ember-decorators/argument":
   version "0.8.4"
   resolved "https://codeload.github.com/ember-decorators/argument/tar.gz/d089e6b93326bd9c3cced51d0fc8c9c55e33511a"
   dependencies:
