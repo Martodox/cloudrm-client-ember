@@ -1,9 +1,14 @@
+<label {{action "toggle"}}>{{device.name}}</label>
 {{#if initialized}}
   <span class="switch">
     {{one-way-checkbox isChecked classNames="switch"}}
-    <label for="switch-id" {{action "toggle"}}>{{device.name}}</label>
+    <label {{action "toggle"}}></label>
   </span>
 {{else}}
-  {{fa-icon "spinner" spin=true}}
+  <div>
+    {{fa-icon "spinner" spin=true}}
+  </div>
+
 {{/if}}
+
 

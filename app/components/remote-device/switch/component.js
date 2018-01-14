@@ -5,6 +5,7 @@ import { inject } from '@ember/service';
 export default Component.extend({
   store: inject(),
   isChecked: false,
+  classNames: 'remote-device switch',
   initialized: false,
   async init() {
     this._super(...arguments);

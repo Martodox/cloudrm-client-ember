@@ -1,11 +1,14 @@
 <div class="remotes-actions">
 
   <h5>Remote: {{remoteId}}</h5>
+  {{#if show}}
+    <div class="devices">
+      {{#each model as |device|}}
+        {{remote-device remoteId=remoteId device=device}}
+      {{/each}}
+    </div>
+  {{/if}}
 
-  <div class="devices">
-    {{#each model as |device|}}
-      {{remote-device remoteId=remoteId device=device}}
-    {{/each}}
-  </div>
+  <button class="btn btn-info refresh-button" {{action "refresh"}}>{{fa-icon 'refresh'  size="2"}}</button>
 
 </div>
