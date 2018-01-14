@@ -9,6 +9,9 @@ module.exports = function(defaults) {
       extension: 'sass',
       includePaths: ['app']
     },
+    'esw-index': {
+      version: '2'
+    },
     'ember-bootstrap': {
       'bootstrapVersion': 4,
       'importBootstrapFont': false,
