@@ -4,7 +4,7 @@ import { inject } from '@ember/service';
 
 export default DS.RESTAdapter.extend({
   login: inject(),
-  host: 'http://localhost:3000',
+  host: 'https://api.cloudrm.pro',
   namespace: 'api/v1',
   headers: computed('login.token', function () {
     return {
