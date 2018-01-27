@@ -1,0 +1,24 @@
+<div class="login container">
+
+  <h2>
+    <img src="/appImages/android/android-launchericon-192-192.png">
+    Cloudrm
+  </h2>
+
+
+
+  <form class="form-signin" onsubmit={{action 'register'}}>
+    <h2 class="form-signin-heading">New account</h2>
+    <label for="inputLogin" class="sr-only">Username</label>
+    {{input name="username" id="inputLogin" class="form-control" type="text" placeholder="Username" value=username}}
+    <label for="inputLogin" class="sr-only">Email address</label>
+    {{input name="username" id="inputEmail" class="form-control" type="text" placeholder="Email" value=email}}
+    <label for="inputPassword" class="sr-only">Password</label>
+    {{input name="password" id="inputPassword" class="form-control" type="password" placeholder="Password" value=password}}
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+  </form>
+
+
+</div>
+
