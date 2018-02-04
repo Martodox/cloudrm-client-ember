@@ -1,0 +1,15 @@
+<label>{{device.name}}</label>
+<button disabled={{disabled}} {{action "touch"}} class="btn btn-sm btn-primary">
+  {{#if initialized}}
+    {{throttle}}
+  {{else}}
+    <div>
+      {{fa-icon "spinner" spin=true}}
+    </div>
+  {{/if}}
+</button>
+
+
+
+
+

@@ -10,7 +10,7 @@ module.exports = function(defaults) {
       includePaths: ['app']
     },
     'esw-index': {
-      version: '5'
+      version: '6'
     },
     'ember-bootstrap': {
       'bootstrapVersion': 4,
